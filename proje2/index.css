@@ -305,37 +305,37 @@ h3 {
 }
 .carousel__slide:nth-of-type(1),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(1) {
-  background-image: url("../../../Items/Images/Pexels_seo.jpg");
+  background-image: url("../Images/Pexels_seo.jpg");
   background-size: cover;
   background-position: center;
 }
 .carousel__slide:nth-of-type(2),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(2) {
-  background-image: url("../../../Items/Images/Je_Moon_wp\ \(2\).jpeg");
+  background-image: url("../Images/Je_Moon_wp\ \(2\).jpeg");
   background-size: cover;
   background-position: center;
 }
 .carousel__slide:nth-of-type(3),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(3) {
-  background-image: url("../../../Items/Images/Je_Moon_wp\ \(3\).jpeg");
+  background-image: url("../Images/Je_Moon_wp\ \(3\).jpeg");
   background-size: cover;
   background-position: center;
 }
 .carousel__slide:nth-of-type(4),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(4) {
-  background-image: url("../../../Items/Images/Je_Moon_wp\ \(4\).jpeg");
+  background-image: url("../Images/Je_Moon_wp\ \(4\).jpeg");
   background-size: cover;
   background-position: center;
 }
 .carousel__slide:nth-of-type(5),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(5) {
-  background-image: url("../../../Items/Images/Je_Moon_wp\ \(1\).jpeg");
+  background-image: url("../Images/Je_Moon_wp\ \(1\).jpeg");
   background-size: cover;
   background-position: center;
 }
 .carousel__slide:nth-of-type(6),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(6) {
-  background-image: url("../../../Items/Images/Je_Moon_wp\ \(6\).jpeg");
+  background-image: url("..//Images/Je_Moon_wp\ \(6\).jpeg");
   background-size: cover;
   background-position: center;
 }
