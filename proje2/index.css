@@ -143,6 +143,26 @@
 .carousel__activator:nth-of-type(5):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(5) {
   opacity: 1;
 }
+
+.carousel__activator:nth-of-type(6):checked ~ .carousel__track {
+  transform: translateX(-500%);
+}
+.carousel__activator:nth-of-type(6):checked ~ .carousel__slide:nth-of-type(6) {
+  transition: opacity 0.5s, transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+.carousel__activator:nth-of-type(6):checked ~ .carousel__controls:nth-of-type(6) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(6):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(6) {
+  opacity: 1;
+}
+
 .carousel__control {
   height: 30px;
   width: 30px;
@@ -220,6 +240,9 @@
 .carousel__track .carousel__slide:nth-of-type(5) {
   transform: translateX(400%);
 }
+.carousel__track .carousel__slide:nth-of-type(6) {
+  transform: translateX(500%);
+}
 .carousel--scale .carousel__slide {
   transform: scale(0);
 }
@@ -282,31 +305,45 @@ h3 {
 }
 .carousel__slide:nth-of-type(1),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(1) {
-  background-image: url("https://unsplash.it/300?random");
+  background-image: url("../../../Items/Images/Pexels_seo.jpg");
   background-size: cover;
   background-position: center;
 }
 .carousel__slide:nth-of-type(2),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(2) {
-  background-image: url("https://unsplash.it/600?random");
+  background-image: url("../../../Items/Images/Je_Moon_wp\ \(2\).jpeg");
   background-size: cover;
   background-position: center;
 }
 .carousel__slide:nth-of-type(3),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(3) {
-  background-image: url("https://unsplash.it/900?random");
+  background-image: url("../../../Items/Images/Je_Moon_wp\ \(3\).jpeg");
   background-size: cover;
   background-position: center;
 }
 .carousel__slide:nth-of-type(4),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(4) {
-  background-image: url("https://unsplash.it/1200?random");
+  background-image: url("../../../Items/Images/Je_Moon_wp\ \(4\).jpeg");
   background-size: cover;
   background-position: center;
 }
 .carousel__slide:nth-of-type(5),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(5) {
-  background-image: url("https://unsplash.it/1500?random");
+  background-image: url("../../../Items/Images/Je_Moon_wp\ \(1\).jpeg");
   background-size: cover;
   background-position: center;
 }
+.carousel__slide:nth-of-type(6),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(6) {
+  background-image: url("../../../Items/Images/Je_Moon_wp\ \(6\).jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
+
+
+
