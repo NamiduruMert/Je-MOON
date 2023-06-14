@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scroll ile Sağdan Aşağıya İnen Navbar Menüsü</title>
+  <style>
+    body {
+      height: 2000px; /* Uzun bir sayfa oluşturmak için */
+    }
+
+    #navbar {
+      position: fixed;
+      top: 50%; /* Sayfanın ortasına yerleştir */
+      right: -100px; /* Başlangıçta sağda gizlenmiş olarak başlasın */
+      transform: translateY(-50%);
+      background-color: #333;
+      padding: 10px;
+      transition: right 0.3s;
+      height: 100%;
+    }
+
+    #navbar.visible {
+      right: 0; /* Scroll aşağı indikçe görünür hale gelsin */
+    }
+
+    #content {
+      margin-right: 120px; /* Navbar görüntülenene kadar içeriğin sağ boşluğunu ayarla */
+    }
+  </style>
+  <script>
+    window.addEventListener("scroll", function() {
+      var navbar = document.getElementById("navbar");
+      if (window.pageYOffset > 0) {
+        navbar.classList.add("visible");
+      } else {
+        navbar.classList.remove("visible");
+      }
+    });
+  </script>
+</head>
+<body>
+  <div id="navbar">
+    <ul>
+      <li><a href="#section1">Bölüm 1</a></li>
+      <li><a href="#section2">Bölüm 2</a></li>
+      <li><a href="#section3">Bölüm 3</a></li>
+    </ul>
+  </div>
+
+  <div id="content">
+    <h1 id="section1">Bölüm 1</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <h1 id="section2">Bölüm 2</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <h1 id="section3">Bölüm 3</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+</body>
+</html>
