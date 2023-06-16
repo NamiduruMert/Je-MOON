@@ -172,15 +172,12 @@
 }
 
 .carousel__control {
-  margin-left: 97px;
-  margin-right: 97px;
   height: 30px;
   width: 30px;
-  margin-top: 45.4%;
-  position: sticky;
+  margin-top: -15px;
   top: 50%;
-  
-  display: inline-block;
+  position: absolute;
+  display: block;
   cursor: pointer;
   border-width: 5px 5px 0 0;
   border-style: solid;
@@ -444,10 +441,12 @@ footer .myFootercontainer {
   color: black;
   width: 100%;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'textside textside'
+    'servside servside';
+  gap: 20px;
   background-image: url(../Images/Hotel\ \(4\).jpg);
   background-size: cover;
   background-position: center;
@@ -463,6 +462,11 @@ footer .myFootercontainer::before { /* Yeni eklenen seçici */
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.8); /* Koyuluk seviyesini buradan ayarlayabilirsiniz */
+}
+
+.textSide {
+  grid-area: textside;
+  text-align: center;
 }
 
 footer h1,
@@ -507,10 +511,12 @@ footer a {
 }
 
 footer .spinnerContent {
+  grid-area: header;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   width: 100%;
+  margin-top: 30px;
   
 }
 
@@ -597,11 +603,13 @@ footer .circlePText {
 }
 
 footer .gpsSide {
+  grid-area: gpsside;
   margin-top: 30px;
   position: relative;
 }
 
 footer .fullcontentSide {
+  grid-area: textside;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -612,6 +620,7 @@ footer .fullcontentSide {
   font-family: 'Mistrully', sans-serif; 
   color: azure;
   font-size: 80px;
+  padding-bottom: 30px;
   
 }
 .BrandNew .textBody {
@@ -624,6 +633,8 @@ footer .fullcontentSide {
 footer .BrandSocial {
   display: flex;
   flex-direction: row  ;
+  margin: auto;
+  justify-content: space-between;
 }
 
 footer .BrandSocial div a i {
@@ -691,7 +702,14 @@ footer .BrandSocial div a i:hover {
   padding: 5px 8px;
 
 }
+
+.BrandServices {
+  grid-area: servside;
+  text-align: center;
+  margin: auto auto;
+}
 .BrandServices li {
+  
   list-style-type: none;
 }
 .servicesLink {
@@ -702,5 +720,18 @@ footer .BrandSocial div a i:hover {
 .servicesMainBox {
   display: flex;
   flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
 }
 
+.servicesFirstBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+.servicesSecondBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
