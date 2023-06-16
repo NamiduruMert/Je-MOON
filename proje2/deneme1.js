@@ -15,11 +15,12 @@ document.getElementById('back-to-top').addEventListener('click', function() {
     var scrollInterval = setInterval(function() {
         if (currentPosition > 0) {
             window.scrollTo(0, currentPosition);
-            currentPosition -= 50; // Her adımda ne kadar yukarı çıkacağını belirleyebilirsiniz
+            currentPosition -= 10000; // Her adımda ne kadar yukarı çıkacağını belirleyebilirsiniz
         } else {
             clearInterval(scrollInterval);
+            window.scrollTo(0, 0); // Kaydırma tamamlandığında en üstüne gitmek için scrollTo kullanın
         }
-    }, 16); // Kaydırma hızını ayarlayabilirsiniz (16ms = 60 FPS)
+    }, 16); // Kaydırma hızını ayarlayabilirsiniz (1ms)
 });
 
 document.getElementById('whatsapp-icon').addEventListener('click', function() {
