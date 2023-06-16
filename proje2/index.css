@@ -172,12 +172,15 @@
 }
 
 .carousel__control {
+  margin-left: 97px;
+  margin-right: 97px;
   height: 30px;
   width: 30px;
-  margin-top: -15px;
+  margin-top: 45.4%;
+  position: sticky;
   top: 50%;
-  position: absolute;
-  display: block;
+  
+  display: inline-block;
   cursor: pointer;
   border-width: 5px 5px 0 0;
   border-style: solid;
