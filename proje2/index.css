@@ -174,12 +174,10 @@
 .carousel__control {
   height: 30px;
   width: 30px;
-  margin-left: 97px;
-  margin-right: 97px;
-  margin-top: 45.4%;
+  margin-top: -15px;
   top: 50%;
-  position:sticky;
-  display: inline-block;
+  position: absolute;
+  display: block;
   cursor: pointer;
   border-width: 5px 5px 0 0;
   border-style: solid;
@@ -737,3 +735,6 @@ footer .BrandSocial div a i:hover {
   flex-direction: row;
   justify-content: space-evenly;
 }
+
+
+
