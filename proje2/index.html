@@ -14,36 +14,112 @@
                 
     <title>Je Moon</title>
     <style>
+      .descriptionSide p {
+        color: rgb(255, 210, 48);
+        margin: 10px 16px;
+        
+      }
+      .descriptionSide h4 {
+        font-size: 2rem;
+        margin: 10px 16px;
 
-#alternative-page-content {
-  margin-top: 20vh;
+      }
+      .descriptionSide a {
+        text-decoration: none;
+      }
+.descriptionSide-1 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(5, 1fr); /* İki sütun oluşturur */
+  margin: 200px auto;
+  transition: .2s;
+}
+.descriptionSide-1:hover {
+  box-shadow: 10px 10px 10px rgb(201, 78, 78);
+  border: 1px solid red;
+  transform: translateY(-5px);
 }
 
-      #alternative-page-content h1 {
-        position: relative;
-        margin-top: 20px;
-        height: 50px;
-        font-size: 30px;
-        transition: .3s;
-        display: inline-block;
-      
-        
-      }
-      
-      #alternative-page-content h1 a {
-        
-       display: inline-block;
-       transition: .2s;
-       
-      
-        
-      }
-      #alternative-page-content h1 a:hover {
-        
-        color: rgb(255, 210, 48);
-      
-        
-      }
+.descriptionSide-2 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(5, 1fr); /* İki sütun oluşturur */
+  margin: 200px auto;
+  transition: .2s;
+}
+.descriptionSide-2:hover {
+  
+  border: 1px solid rgb(2, 255, 116);
+  
+}
+
+.side1-image {
+  position: relative;
+  grid-column: 1 / span 2;
+  transition: .3s;
+  overflow: hidden;
+}
+.side2-image {
+  position: relative;
+  grid-column: 4 / span 2;
+  transition: .3s;
+  overflow: hidden;
+}
+.side2-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-column: 1 / span 3;
+  padding: 50px;
+}
+.side1-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s;
+}
+.descriptionSide-1:hover img {
+  width: 100%;
+  height: auto;
+  transform: scale(1.2);
+}
+.side2-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s;
+}
+/* .descriptionSide-2:hover img {
+  width: 100%;
+  height: auto;
+  transform: scale(1.2);
+} */
+
+.side1-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-column: 3 / span 3;
+  padding: 50px;
+}
+.cardDescription {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+
+
+/* CARD KISMI */
+
+.cardDesc-1 {
+  border: 2px solid red;
+}
+.cardText {
+  width: 200px;
+  margin: 8px 16px;
+}
+
+
+
     </style>
 </head>
 
@@ -139,17 +215,120 @@
       </div>
   </header>
 
-  <div style="height: 1000px;" ></div>
+  <!-- <div style="height: 1000px;" ></div> Before The Presentation Close Off... -->
+
+
+  <div class="descriptionSide">
+    <div class="descriptionSide-1">
+      <div class="side1-image"><img  style="width: 100%;  height: 400px;" src="../Images/Seo-description.jpg" alt=""></div>
+      <div class="side1-text">
+        <h4>SEO Uygulamalarımız</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sapiente quidem vero accusamus iure. Earum facilis quos unde sequi voluptas doloremque at aliquam recusandae ea dolor nam, inventore tempore est!</p>
+        <p>Daha fazlası için <a target="_blank" href="https://api.whatsapp.com/send?phone=905393349205">buradan</a> iletişime geçebilirsiniz.</p>
+      </div>
+    </div>
+    <div class="descriptionSide-2">
+      <div class="side2-text">
+        <h4>SEO Uygulamalarımız</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sapiente quidem vero accusamus iure. Earum facilis quos unde sequi voluptas doloremque at aliquam recusandae ea dolor nam, inventore tempore est!</p>
+        <p>Daha fazlası için <a target="_blank" href="https://api.whatsapp.com/send?phone=905393349205">buradan</a> iletişime geçebilirsiniz.</p>
+      </div>
+      <div class="side2-image"><img  style="width: 100%;  height: 400px;" src="../Images/deneme-1.jpg" alt=""></div>
+
+    </div>
+  </div>
+
+<div class="descriptionCardSide">
+
+  <h3 style="color: rgb(255, 210, 48);">HİZMETLERİMİZ</h3>
+  <div class="ag-format-container">
+    <div class="ag-courses_box">
+      
+  
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+  
+          <div class="ag-courses-item_title">
+            SEO Uyumlu Makale Yazımı
+          </div>
+        </a>
+      </div>
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+  
+          <div class="ag-courses-item_title">
+            Literatür Taraması
+          </div>
+        </a>
+      </div>
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+  
+          <div class="ag-courses-item_title">
+            Tez Yazımı
+          </div>
+        </a>
+      </div>
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+  
+          <div class="ag-courses-item_title">
+            Nicel Analizler
+          </div>
+        </a>
+      </div>
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+  
+          <div class="ag-courses-item_title">
+            Format Kontrol
+          </div>
+        </a>
+      </div>
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+  
+          <div class="ag-courses-item_title">
+            Redaksiyon Uygulama
+          </div>
+        </a>
+      </div>
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+  
+          <div class="ag-courses-item_title">
+            İK Mülakat
+          </div>
+        </a>
+      </div>
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+  
+          <div class="ag-courses-item_title">
+            CV Koçluğu
+          </div>
+        </a>
+      </div>
+  
+      
+  
+    </div>
+  </div>
+</div>
+ 
+
 
 
 
   <footer id="footerSide">
-
-    <div class="container">
-       
-    </div>
-
-
   <div class="myFootercontainer">
     <div class="spinnerContent">
       <div class="spinnerContent_item_1">
@@ -204,26 +383,26 @@
       </div>
     </div>
     <div class="BrandServices">
-      <p class="servicesHeader">Hizmetlerimiz</p>
+      <p style="color: rgb(255, 210, 48);" class="servicesHeader">Hizmetlerimiz</p>
       <div class="servicesMainBox">
         <div class="servicesFirstBox">
           <ul>
-            <li><a class="servicesLink" href="#container">Literatür Taraması</a></li>
-            <li><a class="servicesLink" href="#container">SEO Uyumlu Makale Yazımı</a></li>
+            <li><a class="servicesLink" href="">Literatür Taraması</a></li>
+            <li><a class="servicesLink" href="">SEO Uyumlu Makale Yazımı</a></li>
             </ul>
             <ul>
-            <li><a class="servicesLink" href="#container">Tez Yazımı</a></li>
-            <li><a class="servicesLink" href="#container">Nicel Analizler</a></li>
+            <li><a class="servicesLink" href="">Tez Yazımı</a></li>
+            <li><a class="servicesLink" href="">Nicel Analizler</a></li>
             </ul>
         </div>
         <div class="servicesSecondBox">
           <ul>
-            <li><a class="servicesLink" href="#container">Format Kontrol</a></li>
-            <li><a class="servicesLink" href="#container">Redaksiyon Uygulama</a></li>   
+            <li><a class="servicesLink" href="">Format Kontrol</a></li>
+            <li><a class="servicesLink" href="">Redaksiyon Uygulama</a></li>   
           </ul>
           <ul>
-            <li><a class="servicesLink" href="#container">İK Mülakat</a></li>
-            <li><a class="servicesLink" href="#container">CV Koçluğu</a></li>
+            <li><a class="servicesLink" href="">İK Mülakat</a></li>
+            <li><a class="servicesLink" href="">CV Koçluğu</a></li>
           </ul>
         </div>
       </div>

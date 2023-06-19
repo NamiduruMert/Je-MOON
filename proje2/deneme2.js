@@ -5,6 +5,7 @@ var hamburgerMenu = document.getElementById('hamburger-menu');
   
     hamburgerMenu.addEventListener('click', function() {
       if (isAlternativePageVisible) {
+        originalPageContent.style = 
         originalPageContent.style.display = 'block';
         alternativePageContent.style.display = 'none';
         isAlternativePageVisible = false;
