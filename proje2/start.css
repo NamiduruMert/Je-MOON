@@ -1,18 +1,26 @@
-body {
+html, body {
     height: 100%;
-    width: 100%;
     padding: 0;
     margin: 0;
-    background-color: black;
+ 
+  }
+  .media{
+    width: 100%;
+    height: 100%;
+    background-image: url('../Images/startimage.jpeg');
+    background-size: cover; 
+    background-position: center;
+    position: relative;
+    padding-bottom: 75%;
   }
 
 .text-container{
     width: 100%;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: black;
     font-family: "Cutive Mono", monospace;
     letter-spacing: 4px;
     font-size: 34px;
@@ -21,7 +29,7 @@ body {
 }
 .reg-text{
     text-align: center;
-    color: white;
+    color: black;
     display: inline-block;
     transform: translateY(100px);
   opacity: 0;
@@ -34,7 +42,7 @@ body {
   
 .letter{
     text-align: center;
-    color: white;
+    color: black;
     display: inline-block;
     transition: transform 5s cubic-bezier(0.43, 0.1, 0.57, 0.9), filter 5s ease, opacity 5s ease;
   opacity: 0;

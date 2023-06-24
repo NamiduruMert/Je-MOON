@@ -2,86 +2,186 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.cdnfonts.com/css/mistrully" rel="stylesheet">
-    <link rel="icon" href="../Images/je-moon-icon.png">
-    <link rel="stylesheet" href="../Je_moon_css/Fixed_buttons.css">
-    <link rel="stylesheet" href="../Je_moon_css/Base_styles.css">
-    <link rel="stylesheet" href="../Je_moon_css/Carousel.css" >
-    <link rel="stylesheet" href="../Je_moon_css/Navbar.css" >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.cdnfonts.com/css/mistrully" rel="stylesheet">
+  <link rel="icon" href="../Images/je-moon-icon.png">
 
-    
-                
-    <title>Je Moon</title>
-    <style>
-      
-    </style>
+
+  <title>Je Moon</title>
+  <style>
+    .descriptionSide p {
+      color: rgb(255, 210, 48);
+      margin: 10px 16px;
+
+    }
+
+    .descriptionSide h4 {
+      font-size: 2rem;
+      margin: 10px 16px;
+
+    }
+
+    .descriptionSide a {
+      text-decoration: none;
+    }
+
+    .descriptionSide-1 {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(5, 1fr);
+      /* İki sütun oluşturur */
+      margin: 200px auto;
+      transition: .2s;
+    }
+
+    .descriptionSide-1:hover {
+      box-shadow: 10px 10px 10px rgb(201, 78, 78);
+      border: 1px solid red;
+      transform: translateY(-5px);
+    }
+
+    .descriptionSide-2 {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(5, 1fr);
+      /* İki sütun oluşturur */
+      margin: 200px auto;
+      transition: .2s;
+    }
+
+    .descriptionSide-2:hover {
+
+      border: 1px solid rgb(2, 255, 116);
+
+    }
+
+    .side1-image {
+      position: relative;
+      grid-column: 1 / span 2;
+      transition: .3s;
+      overflow: hidden;
+    }
+
+    .side2-image {
+      position: relative;
+      grid-column: 4 / span 2;
+      transition: .3s;
+      overflow: hidden;
+    }
+
+    .side2-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      grid-column: 1 / span 3;
+      padding: 50px;
+    }
+
+    .side1-image img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.5s;
+    }
+
+    .descriptionSide-1:hover img {
+      width: 100%;
+      height: auto;
+      transform: scale(1.2);
+    }
+
+    .side2-image img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.5s;
+    }
+
+    /* .descriptionSide-2:hover img {
+  width: 100%;
+  height: auto;
+  transform: scale(1.2);
+} */
+
+    .side1-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      grid-column: 3 / span 3;
+      padding: 50px;
+    }
+
+    .cardDescription {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+    }
+
+
+
+    /* CARD KISMI */
+
+    .cardDesc-1 {
+      border: 2px solid red;
+    }
+
+    .cardText {
+      width: 200px;
+      margin: 8px 16px;
+    }
+  </style>
 </head>
 
 <body>
 
-        <div class="fixedButtons">
-        <div id="back-to-top"><i class="fa-solid fa-arrow-up" ></i></div> <!-- Yükselme ikonu -->
-        <div id="whatsapp-icon"><i class="fa-brands fa-whatsapp fa-xl" ></i></div> <!-- WhatsApp ikonu -->
-        </div>  
-    
 
-<header>
-    <div class="carousel-container">
+  <div id="back-to-top"><i class="fa-solid fa-arrow-up"></i></div> <!-- Yükselme ikonu -->
+  <div id="whatsapp-icon"><i class="fa-brands fa-whatsapp fa-xl"></i></div> <!-- WhatsApp ikonu -->
+
+
+  <div id="original-page-content">
+    <header>
+      <div class="carousel-container">
 
 
         <div class="Mynavbar">
 
-          <div class="Flex-class-1"><a href="index.html"><img style="width: 100px; height: 60px; cursor: pointer;" src="../Images/Jemoon_logo.png" alt="baseLogo"></a></div>
-          <div class="Flex-class-2">
-            <div class="menu-container">
-              <i onclick="toggleMenu()" id="hamburger-menu" style="color: black; cursor: pointer;" class="fa-solid fa-bars fa-beat"></i>
-              <ul class="menu-list" id="menuList">
-                <h3>Je Moon</h3>
-                <p class="sloganYazi-Hamburger">Kalitenin Kilometre Taşı...</p>
-                <p class="sloganYazi2-Hamburger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, doloribus? Profesyonel ekip, öğrencilere akademik başarılarını artırmak için özgün, detaylı ve yüksek kalitede tezler sunmaktadır. Je Moon, müşterilerine güvenilir bir çözüm sunarak akademik hedeflerine ulaşmalarına yardımcı olmaktadır.</p>
-                <li><a href="">Biz kimiz?</a></li>
-                <li><a href="">Hizmetlerimiz</a></li>
-                <li><a href="">İletişim</a></li>
-                <li><a href=""></a></li>
-                <div class="hamburger-icons" style="display: flex; justify-content: space-evenly; margin-top: 25px; flex-direction: row;  ">
-                  <li><a target="_blank" href="mailto:jemooncompany@gmail.com"><img src="../Images/Je_moon_icon (1).png" alt=""></a></li>
-                <li><a target="_blank" href="https://wa.me/905393349205?text=Merhaba, bilgi almak istiyorum.Yardımcı olursanız çok sevinirim.Teşekkürler..."><img src="../Images/Je_moon_icon (2).png" alt=""></a></li>
-                <li><a target="_blank" href="https://www.instagram.com/jemooncompany/?igshid=MzRlODBiNWFlZA%3D%3D"><img src="../Images/Je_moon_icon (3).png" alt=""></a></li>
-              
-                </div>
-              </ul>
-              
-              <div>
-                
-              </div>
-            </div></div>
+          <div class="Flex-class-1"><a href="index.html"><img style="width: 100px; height: 60px; cursor: pointer;"
+                src="../Images/Jemoon_logo.png" alt="baseLogo"></a></div>
+          <div class="Flex-class-2"><i id="hamburger-menu" style="color: black; cursor: pointer;"
+              class="fa-solid fa-bars fa-beat"></i></div>
           <div class="Flex-class-3">
 
-            <div class="birinciDiv"><a target="_blank" href="mailto:jemooncompany@gmail.com"><img src="../Images/Je_moon_icon (1).png" alt=""></a></div>
-            <div class="ikinciDiv"><a target="_blank" href="https://wa.me/905393349205?text=Merhaba, bilgi almak istiyorum.Yardımcı olursanız çok sevinirim.Teşekkürler..."><img src="../Images/Je_moon_icon (2).png" alt=""></a></div>
-            <div class="ucuncuDiv"><a target="_blank" href="https://www.instagram.com/jemooncompany/?igshid=MzRlODBiNWFlZA%3D%3D"><img src="../Images/Je_moon_icon (3).png" alt=""></a></div>
+            <div><a target="_blank" href="mailto:jemooncompany@gmail.com"><img src="../Images/Je_moon_icon (1).png"
+                  alt=""></a></div>
+            <div><a target="_blank"
+                href="https://wa.me/905393349205?text=Merhaba, bilgi almak istiyorum.Yardımcı olursanız çok sevinirim.Teşekkürler..."><img
+                  src="../Images/Je_moon_icon (2).png" alt=""></a></div>
+            <div><a target="_blank" href="https://www.instagram.com/jemooncompany/?igshid=MzRlODBiNWFlZA%3D%3D"><img
+                  src="../Images/Je_moon_icon (3).png" alt=""></a></div>
           </div>
-          
-          <!-- BU KISIMDA KALDIK 14.06 -->
+
+         
 
         </div>
 
 
         <h2></h2>
         <ul class="carousel my-carousel carousel--thumb">
-          <input class="carousel__activator" type="radio" id="K" name="thumb" checked="checked"/>
-          <input class="carousel__activator" type="radio" id="L" name="thumb"/>
-          <input class="carousel__activator" type="radio" id="M" name="thumb"/>
-          
+          <input class="carousel__activator" type="radio" id="K" name="thumb" checked="checked" />
+          <input class="carousel__activator" type="radio" id="L" name="thumb" />
+          <input class="carousel__activator" type="radio" id="M" name="thumb" />
+          <input class="carousel__activator" type="radio" id="N" name="thumb" />
+          <input class="carousel__activator" type="radio" id="O" name="thumb" />
+          <input class="carousel__activator" type="radio" id="P" name="thumb" />
 
           <div class="carousel__controls">
-            <label class="carousel__control carousel__control--backward" for="M"></label>
+            <label class="carousel__control carousel__control--backward" for="P"></label>
             <label class="carousel__control carousel__control--forward" for="L"></label>
           </div>
           <div class="carousel__controls">
@@ -90,9 +190,20 @@
           </div>
           <div class="carousel__controls">
             <label class="carousel__control carousel__control--backward" for="L"></label>
+            <label class="carousel__control carousel__control--forward" for="N"></label>
+          </div>
+          <div class="carousel__controls">
+            <label class="carousel__control carousel__control--backward" for="M"></label>
+            <label class="carousel__control carousel__control--forward" for="O"></label>
+          </div>
+          <div class="carousel__controls">
+            <label class="carousel__control carousel__control--backward" for="N"></label>
+            <label class="carousel__control carousel__control--forward" for="P"></label>
+          </div>
+          <div class="carousel__controls">
+            <label class="carousel__control carousel__control--backward" for="O"></label>
             <label class="carousel__control carousel__control--forward" for="K"></label>
           </div>
-         
           <li class="carousel__slide">
             <h1></h1>
           </li>
@@ -102,209 +213,326 @@
           <li class="carousel__slide">
             <h1></h1>
           </li>
-          
+          <li class="carousel__slide">
+            <h1></h1>
+          </li>
+          <li class="carousel__slide">
+            <h1></h1>
+          </li>
+          <li class="carousel__slide">
+            <h1></h1>
+          </li>
           <div class="carousel__indicators">
             <label class="carousel__indicator" for="K"></label>
             <label class="carousel__indicator" for="L"></label>
             <label class="carousel__indicator" for="M"></label>
-            
+            <label class="carousel__indicator" for="N"></label>
+            <label class="carousel__indicator" for="O"></label>
+            <label class="carousel__indicator" for="P"></label>
 
           </div>
         </ul>
       </div>
-</header>
+    </header>
 
-  <!-- <div style="height: 1000px;" ></div> Before The Presentation Close Off... -->
+    <!-- <div style="height: 1000px;" ></div> Before The Presentation Close Off... -->
 
 
-<section>
+    <section>
 
-  <div class="descriptionSide">
-      <div class="descriptionSide-1">
-        <div class="side1-image"><img  style="width: 100%;  height: 400px;" src="../Images/Seo-description.jpg" alt=""></div>
-        <div class="side1-text">
-          <h4>SEO Uygulamalarımız</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sapiente quidem vero accusamus iure. Earum facilis quos unde sequi voluptas doloremque at aliquam recusandae ea dolor nam, inventore tempore est!</p>
-          <p>Daha fazlası için <a target="_blank" href="https://api.whatsapp.com/send?phone=905393349205">buradan</a> iletişime geçebilirsiniz.</p>
-        </div>
-      </div>
-      <div class="descriptionSide-2">
-        <div class="side2-text">
-          <h4>SEO Uygulamalarımız</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sapiente quidem vero accusamus iure. Earum facilis quos unde sequi voluptas doloremque at aliquam recusandae ea dolor nam, inventore tempore est!</p>
-          <p>Daha fazlası için <a target="_blank" href="https://api.whatsapp.com/send?phone=905393349205">buradan</a> iletişime geçebilirsiniz.</p>
-        </div>
-        <div class="side2-image"><img  style="width: 100%;  height: 400px;" src="../Images/deneme-1.jpg" alt=""></div>
+      <div id="descriptionBox" class="descriptionCardSide">
 
-      </div>
-  </div>
+        <h3 style="color: rgb(255, 210, 48);">HİZMETLERİMİZ</h3>
+        <div class="ag-format-container">
+          <div class="ag-courses_box">
 
-  <div class="descriptionCardSide">
 
-    <h3 style="color: rgb(255, 210, 48);">HİZMETLERİMİZ</h3>
-    <div class="ag-format-container">
-      <div class="ag-courses_box">
-        
-    
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
-    
-            <div class="ag-courses-item_title">
-              SEO Uyumlu Makale Yazımı
+            <div class="ag-courses_item">
+              <a href="#" class="ag-courses-item_link">
+                <div class="ag-courses-item_bg"></div>
+
+                <div class="ag-courses-item_title">
+                  SEO Uyumlu Makale Yazımı
+                </div>
+              </a>
             </div>
-          </a>
-        </div>
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
-    
-            <div class="ag-courses-item_title">
-              Literatür Taraması
-            </div>
-          </a>
-        </div>
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
-    
-            <div class="ag-courses-item_title">
-              Tez Yazımı
-            </div>
-          </a>
-        </div>
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
-    
-            <div class="ag-courses-item_title">
-              Nicel Analizler
-            </div>
-          </a>
-        </div>
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
-    
-            <div class="ag-courses-item_title">
-              Format Kontrol
-            </div>
-          </a>
-        </div>
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
-    
-            <div class="ag-courses-item_title">
-              Redaksiyon Uygulama
-            </div>
-          </a>
-        </div>
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
-    
-            <div class="ag-courses-item_title">
-              İK Mülakat
-            </div>
-          </a>
-        </div>
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
-    
-            <div class="ag-courses-item_title">
-              CV Koçluğu
-            </div>
-          </a>
-        </div>
-    
-        
-    
-      </div>
-    </div>
-  </div>
+            <div class="ag-courses_item">
+              <a href="#" class="ag-courses-item_link">
+                <div class="ag-courses-item_bg"></div>
 
-</section>
+                <div class="ag-courses-item_title">
+                  Literatür Taraması
+                </div>
+              </a>
+            </div>
+            <div class="ag-courses_item">
+              <a href="#" class="ag-courses-item_link">
+                <div class="ag-courses-item_bg"></div>
 
-<footer id="footerSide">
-    <div class="myFootercontainer">
-      <div class="spinnerContent">
-        <div class="spinnerContent_item_1">
-          <div class="circle circle1">
-            <p id="firstSpinnerText" class="circleP"></p>
-        </div>
-        <p class="circlePText">Tamamlanan Projeler</p>
-        </div>
-        <div class="spinnerContent_item_2">
-          <div class="circle circle2">
-            <p id="secondSpinnerText" class="circleP">100%</p>
-        </div>
-        <p class="circlePText">Müşteri Memnuniyeti</p>
+                <div class="ag-courses-item_title">
+                  Tez Yazımı
+                </div>
+              </a>
+            </div>
+            <div class="ag-courses_item">
+              <a href="#" class="ag-courses-item_link">
+                <div class="ag-courses-item_bg"></div>
 
-        </div>
-        <div class="spinnerContent_item_3">
-          <div class="circle circle3">
-            <p id="thirdSpinnerText" class="circleP">+7 Yıl</p>
-        </div>
-        <p class="circlePText">Tecrübe Düzeyimiz</p>
+                <div class="ag-courses-item_title">
+                  Nicel Analizler
+                </div>
+              </a>
+            </div>
+            <div class="ag-courses_item">
+              <a href="#" class="ag-courses-item_link">
+                <div class="ag-courses-item_bg"></div>
 
-        </div>
-        <div class="spinnerContent_item_4">
-          <div class="circle circle4">
-            <p id="forthSpinnerText" class="circleP">+ 150</p>
-        </div>
-        <p class="circlePText">Personel Sayısı</p>
+                <div class="ag-courses-item_title">
+                  Format Kontrol
+                </div>
+              </a>
+            </div>
+            <div class="ag-courses_item">
+              <a href="#" class="ag-courses-item_link">
+                <div class="ag-courses-item_bg"></div>
 
-        </div>
-      </div>
-      <div class="fullcontentSide">
-        <div class="gpsSide">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.016477215846!2d29.098826446292417!3d41.02489545520987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac8f0bc714795%3A0x66dd82cf8321bfb3!2sAlemda%C4%9F%20Cd%20%26%20Alemdar%20Sk.%2C%20Yaman%20Evler%2C%2034768%20%C3%9Cmraniye%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1686841342499!5m2!1str!2str" 
-          width="450" 
-          height="400" 
-          style="border:0; opacity: 0.70; border-radius: 25px;" 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="textSide">
-          <div class="BrandNew"><p class="headerText">je MOON <br> <span class="textBody">Kalitenin Kilometre Taşı...</span></p>
-            <!-- <p class="textBody">Kalitenin Kilometre Taşı</p> -->
+                <div class="ag-courses-item_title">
+                  Redaksiyon Uygulama
+                </div>
+              </a>
+            </div>
+            <div class="ag-courses_item">
+              <a href="#" class="ag-courses-item_link">
+                <div class="ag-courses-item_bg"></div>
+
+                <div class="ag-courses-item_title">
+                  İK Mülakat
+                </div>
+              </a>
+            </div>
+            <div class="ag-courses_item">
+              <a href="#" class="ag-courses-item_link">
+                <div class="ag-courses-item_bg"></div>
+
+                <div class="ag-courses-item_title">
+                  CV Koçluğu
+                </div>
+              </a>
+            </div>
+
+
+
           </div>
-          <div class="BrandSocial">
-            <div><a target="_blank" href="https://www.instagram.com/jemooncompany/?igshid=MzRlODBiNWFlZA%3D%3D"><i class="fa-brands fa-instagram fa-2xl" ></i></a></div>
-            <div><a target="_blank" href="https://api.whatsapp.com/send?phone=905393349205"><i class="fa-brands fa-whatsapp fa-2xl" ></i></a></div>
-            <div><a target="_blank" href="mailto:jemooncompany@gmail.com"><i class="fa-solid fa-envelope fa-2xl" ></i></a></div>
-          </div>
-          
-          
         </div>
+      </div>
+
+   
+
+
+
+
+
+    </section>
+
+
+
+    
+    <!-- <style>
+.image-block {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(5, 1fr); /* İki sütun oluşturur */
+  margin: 200px auto;
+  transition: .2s;
+}
+
+    </style> -->
+
+
+  <!-- card örnek 1 -->
+  <!-- <div id="image-container" class="cards">
+    <figure class="image-block">
+        <h1>The Beach</h1>
+        <img src="https://images.pexels.com/photos/1680140/pexels-photo-1680140.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="" />
+        <figcaption>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem aut magnam numquam nemo ipsa?
+                </p>
+            <button>
+                More Info
+            </button>
+        </figcaption>
+    </figure>
+</div> -->
+<!-- card örnek 1 bitiş   -->
+
+
+
+
+
+
+
+
+
+
+    <footer id="footerSide">
+      <div class="myFootercontainer">
+        <div class="spinnerContent">
+          <div class="spinnerContent_item_1">
+            <div class="circle circle1">
+              <p class="circleP">0</p>
+            </div>
+            <p class="circlePText">Tamamlanan Projeler</p>
+          </div>
+          <div class="spinnerContent_item_2">
+            <div class="circle circle2">
+              <p class="circleP">0%</p>
+            </div>
+            <p class="circlePText">Müşteri Memnuniyeti</p>
+
+          </div>
+          <div class="spinnerContent_item_3">
+            <div class="circle circle3">
+              <p class="circleP">+0 Yıl</p>
+            </div>
+            <p class="circlePText">Tecrübe Düzeyimiz</p>
+
+          </div>
+          <div class="spinnerContent_item_4">
+            <div class="circle circle4">
+              <p class="circleP">+ 0</p>
+            </div>
+            <p class="circlePText">Personel Sayısı</p>
+
+          </div>
+        </div>
+
+        <div class="fullcontentSide">
+          <div class="textSide">
+            <div class="BrandNew">
+              <p class="headerText">je MOON <br> <span class="textBody">Kalitenin Kilometre Taşı...</span></p>
+              <!-- <p class="textBody">Kalitenin Kilometre Taşı</p> -->
+            </div>
+            <div class="BrandSocial">
+              <div><a target="_blank" href="https://www.instagram.com/jemooncompany/?igshid=MzRlODBiNWFlZA%3D%3D"><i
+                    class="fa-brands fa-instagram fa-2xl"></i></a></div>
+              <div><a target="_blank" href="https://api.whatsapp.com/send?phone=905393349205"><i
+                    class="fa-brands fa-whatsapp fa-2xl"></i></a></div>
+              <div><a target="_blank" href="mailto:jemooncompany@gmail.com"><i
+                    class="fa-solid fa-envelope fa-2xl"></i></a></div>
+            </div>
+
+
+          </div>
+        </div>
+
+
+        <!-- hizmetlerimiz footerda html css yorum satırında  -->
+        <!-- <div class="BrandServices">
+        <p style="color: rgb(255, 210, 48);" class="servicesHeader">Hizmetlerimiz</p>
+        <div class="servicesMainBox">
+          <div class="servicesFirstBox">
+            <ul>
+              <li><a class="servicesLink" href="">Literatür Taraması</a></li>
+              <li><a class="servicesLink" href="">SEO Uyumlu Makale Yazımı</a></li>
+              </ul>
+              <ul>
+              <li><a class="servicesLink" href="">Tez Yazımı</a></li>
+              <li><a class="servicesLink" href="">Nicel Analizler</a></li>
+              </ul>
+          </div>
+          <div class="servicesSecondBox">
+            <ul>
+              <li><a class="servicesLink" href="">Format Kontrol</a></li>
+              <li><a class="servicesLink" href="">Redaksiyon Uygulama</a></li>   
+            </ul>
+            <ul>
+              <li><a class="servicesLink" href="">İK Mülakat</a></li>
+              <li><a class="servicesLink" href="">CV Koçluğu</a></li>
+            </ul>
+          </div>
+        </div>
+        
+
+    </div> -->
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="text-center mt-5">
+              <p class="mb-0">2023 © Je Moon.</p>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+
+      
+    <div id="whoweare" class="container-fluid">
+      <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
+          <figure>
+              <div class="media"
+              style="background-image: url('../Images/bizkimiz.jpeg'); opacity: 0.5; border-radius: 10px;"></div>
+              <figcaption>
+                  <svg viewBox="0 0 200 200" version="1.1" preserveAspectRatio="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <defs>
+                          <mask id="mask" x="0" y="0" width="100%" height="100%">
+                              <rect id="alpha" x="0" y="0" width="100%" height="100%"></rect>
+                              <text class="title" dx="50%" dy="2.5em">BİZ</text>
+                              <text class="title" dx="50%" dy="3.5em">KİMİZ</text>
+                              <text class="title" dx="50%" dy="4.5em">?</text>
+                          </mask>
+                      </defs>
+                      <rect id="base" x="0" y="0" width="100%" height="100%"></rect>
+                  </svg>
+                  <div class="body">
+                      <p>Enamel pin selvage health goth edison bulb, venmo glossier tattooed hella butcher cred
+                          iPhone.</p>
+                  </div>
+              </figcaption><a target="_blank" href="https://api.whatsapp.com/send?phone=905393349205"></a>
+              
+          </figure>
       </div>
       
-      </div>
-</footer>
+
+
+    </footer>
+
+
+    <div class="gpsSide">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.016477215846!2d29.098826446292417!3d41.02489545520987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac8f0bc714795%3A0x66dd82cf8321bfb3!2sAlemda%C4%9F%20Cd%20%26%20Alemdar%20Sk.%2C%20Yaman%20Evler%2C%2034768%20%C3%9Cmraniye%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1686841342499!5m2!1str!2str"
+        width="300" height="250" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  </div>
+
+
+  <div id="alternative-page-content" style="display: none;">
+
+    <h1><a href="javascript:void(0)" class="page-link" data-target="footerSide"><i class="fa-solid fa-xmark"></i></a></h1>
+    <h1><a href="javascript:void(0)" class="page-link" data-target="footerSide">Biz Kimiz?</a></h1>
+    <h1><a href="javascript:void(0)" class="page-link" data-target="descriptionBox">Hizmet Alanlarımız(section
+        Hizmetlerimiz)</a></h1>
+    <h1><a href="javascript:void(0)" class="page-link" data-target="footerSide">Süreçlerimiz(footer'a Bağlı)</a></h1>
+    <h1><a href="javascript:void(0)" class="page-link" data-target="footerSide">İletişim(footer'a Bağlı)</a></h1>
+    <h1><a href="javascript:void(0)" class="page-link" data-target="footerSide">Blog(footer'a Bağlı)</a></h1>
+
+  </div>
 
 
 
 
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
-        <script src="deneme1.js"></script>
-        <!-- <script src="deneme2.js"></script> -->
-        <script>function toggleMenu() {
-          var menuList = document.getElementById("menuList");
-          menuList.classList.toggle("show");
-        }</script>
-
-        <script src="saniyelikartansayilar.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+    <script src="cards.js"></script>
+  <script src="deneme1.js"></script>
+  <script src="deneme2.js"></script>
 
 </body>
 

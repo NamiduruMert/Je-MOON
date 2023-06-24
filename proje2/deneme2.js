@@ -35,5 +35,3 @@ var hamburgerMenu = document.getElementById('hamburger-menu');
         targetElement.scrollIntoView({ behavior: 'smooth' });
       }
     }
-
-

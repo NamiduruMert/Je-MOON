@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     // Animasyonun tamamlandığında sayfayı otomatik olarak yönlendir
 const redirectToPage = () => {
     // Burada hedef sayfanın src değerini belirleyin
-    const targetSrc = 'index.html'; // Hedef sayfanın src değerini buraya yazın
+    // const targetSrc = 'index.html'; // Hedef sayfanın src değerini buraya yazın
   
     // İstenilen yönlendirme yöntemini kullanarak sayfayı yönlendir
     if (targetSrc) {
