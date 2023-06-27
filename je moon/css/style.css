@@ -45,7 +45,7 @@
 	}
 
 	#template-nt-cta {
-		background-image: url(../images/Art-10.jpg); 
+		background-image: url(../images/Background-4.jpg); 
 		background-attachment: fixed;
 		background-position: center;
 		
@@ -60,6 +60,7 @@
 	.JeMoon_Logo {
 		font-family: 'Mistrully', sans-serif; 
 		color: rgb(255, 210, 48);
+		margin-top: 23px;
 
 	}
 
@@ -83,6 +84,8 @@
 	 * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 	 */
 	/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+	
 	html {
 	  font-family: sans-serif;
 	  -ms-text-size-adjust: 100%;
@@ -8550,7 +8553,7 @@
 	
 	#template-nt-footer {
 	  padding: 4em 0;
-	  background:  #2A1A1F;
+	  background:  rgba(0, 0, 0, 0.8);
 	  color: #878c93;
 	  position: fixed;
 	  bottom: 0;
@@ -8564,7 +8567,7 @@
 	  right: 0;
 	  bottom: 0;
 	  z-index: 8;
-	  background: rgb(28, 33, 32);
+	  background: rgba(0, 0, 0, 0.8);
 	  opacity: .5;
 	}
 	#template-nt-footer .template-nt-footer-content {
@@ -8602,7 +8605,7 @@
 	  text-align: center;
 	}
 	#template-nt-footer a {
-	  color: #9a9fa5;
+	  color:rgb(255, 210, 48);
 	}
 	#template-nt-footer a:hover, #template-nt-footer a:active, #template-nt-footer a:focus {
 	  color: #764134;
@@ -8620,7 +8623,7 @@
 	  font-family: "Montserrat", arial, sans-serif;
 	  font-size: 20px;
 	  letter-spacing: 2px;
-	  color: #ccc;
+	  color: rgb(255, 210, 48);
 	  border: 2px solid #9a9fa5;
 	  float: left;
 	  padding: 7px 10px 7px 12px;
@@ -8628,7 +8631,7 @@
 	}
 	#template-nt-footer .template-nt-footer-logo a:hover, #template-nt-footer .template-nt-footer-logo a:active, #template-nt-footer .template-nt-footer-logo a:focus {
 	  color: #fff;
-	  border-color: #fff;
+	  border-color: rgb(255, 210, 48);
 	  text-decoration: none;
 	}
 	#template-nt-footer ul {
@@ -8776,6 +8779,7 @@
 	  height: 25px;
 	  cursor: pointer;
 	  text-decoration: none;
+	  margin-top: 18px;
 	}
 	.template-nt-nav-toggle.active i::before, .template-nt-nav-toggle.active i::after {
 	  background: #fff;
