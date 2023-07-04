@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm">
+        <input type="text" id="name" placeholder="Adınız">
+        <input type="text" id="phoneNumber" placeholder="Telefon Numarası">
+        <input type="text" id="message" placeholder="Mesajınız">
+        <button type="submit">Gönder</button>
+      </form>
+
+
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+          event.preventDefault(); // Sayfanın yeniden yüklenmesini engeller
+        
+          // Değerleri al
+          var name = document.getElementById("name").value;
+          var phoneNumber = document.getElementById("phoneNumber").value;
+          var message = document.getElementById("message").value;
+        
+          // WhatsApp'a yönlendir ve mesajı oluştur
+          var url = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodeURIComponent(message);
+        
+          // Yeni pencerede WhatsApp'a yönlendir
+          window.open(url);
+        });
+        </script>
+</body>
+</html>

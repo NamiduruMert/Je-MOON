@@ -9104,3 +9104,17 @@
 	}
 
 	/*# sourceMappingURL=style.css.map */
+
+	.animated-img {
+		transition: .4s;
+	}
+	.animated-img:hover {
+
+		transform: scale(1.2);
+
+	}
+
+	.footer-icons {
+		font-size: 30px;
+		margin: 10px;
+	}

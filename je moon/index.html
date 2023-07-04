@@ -149,19 +149,19 @@
 					<div class="container">
 						<div class="row text-center">
 							<div class="col-md-3 col-sm-6 col-xs-6">
-								<figure class="template-nt-client"><img style="height: 50px; width: 50px;"
+								<figure class="template-nt-client"><img class="animated-img" style="height: 50px; width: 50px;"
 										src="images/Documents-logo.png" alt=" Template"></figure>
 							</div>
 							<div class="col-md-3 col-sm-6 col-xs-6">
-								<figure class="template-nt-client"><img style="height: 50px; width: 50px;"
+								<figure class="template-nt-client"><img class="animated-img" style="height: 50px; width: 50px;"
 										src="images/Graduate-logo.png" alt=" Template"></figure>
 							</div>
 							<div class="col-md-3 col-sm-6 col-xs-6">
-								<figure class="template-nt-client"><img style="height: 50px; width: 50px;"
+								<figure class="template-nt-client"><img class="animated-img" style="height: 50px; width: 50px;"
 										src="images/Cv-logo.png" alt=" Template"></figure>
 							</div>
 							<div class="col-md-3 col-sm-6 col-xs-6">
-								<figure class="template-nt-client"><img style="height: 50px; width: 50px;"
+								<figure class="template-nt-client"><img class="animated-img" style="height: 50px; width: 50px;"
 										src="images/Seo-logo.png" alt=" Template"></figure>
 							</div>
 						</div>
@@ -755,22 +755,22 @@
 							<form action="#" method="post">
 								<div class="col-md-3 col-sm-3">
 									<div class="form-group">
-										<input type="text" class="form-control" placeholder="First Name">
+										<input id="firstName" type="text" class="form-control" placeholder="First Name">
 									</div>
 								</div>
 								<div class="col-md-3 col-sm-3">
 									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Last Name">
+										<input id="lastName" type="text" class="form-control" placeholder="Last Name">
 									</div>
 								</div>
 								<div class="col-md-3 col-sm-3">
 									<div class="form-group">
-										<input type="email" class="form-control" placeholder="Email">
+										<input id="topic" type="email" class="form-control" placeholder="Konu">
 									</div>
 								</div>
 								<div class="col-md-3 col-sm-3">
 									<div class="form-group">
-										<a target="_blank"
+										<a id="sendMessage" target="_blank"
 											href="https://wa.me/905393349205?text=Merhaba, lütfen daha fazla bilgi alabilir miyim"
 											class="btn btn-warning "> İletişim İçin...</a>
 									</div>
@@ -821,16 +821,16 @@
 
 							<div class="col-md-6 col-sm-6 ">
 								<div class="template-nt-footer-logo"><a href="index.html">Je MOON</a></div>
-								<p class="template-nt-copyright"><small>&copy; 2023. Bütün hakları saklıdır.</p>
+								<p class="template-nt-copyright"><small>Je MOON &copy; 2023. Bütün hakları saklıdır.</p>
 								<p class="template-nt-social-icons">
 									<a target="_blank"
 										href="https://wa.me/905393349205?text=Merhaba, bilgi almak istiyorum.Yardımcı olursanız çok sevinirim.Teşekkürler..."><i
-											class="icon-whatsapp"></i></a>
+											class="icon-whatsapp footer-icons"></i></a>
 									<a target="_blank"
 										href="https://www.instagram.com/jemooncompany/?igshid=MzRlODBiNWFlZA%3D%3D"><i
-											class="icon-instagram"></i></a>
+											class="icon-instagram footer-icons"></i></a>
 									<a target="_blank" href="mailto:jemooncompany@gmail.com"><i
-											class="icon-envelope"></i></a>
+											class="icon-envelope footer-icons"></i></a>
 
 								</p>
 							</div>
@@ -868,6 +868,23 @@
 	<script src="js/jquery.countTo.js"></script>
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
+
+	<script>
+document.getElementById("sendMessage").addEventListener("click", function(event) {
+  event.preventDefault(); // Sayfanın yeniden yüklenmesini engeller
+
+  // Değerleri al
+  var firstName = document.getElementById("firstName").value;
+  var lastName = document.getElementById("lastName").value;
+  var topic = document.getElementById("topic").value;
+
+  // WhatsApp'a yönlendir ve mesajı oluştur
+  var url = "https://api.whatsapp.com/send?phone=" + 905393349205 + "&text=" + "Merhabalar." + " Ben " + encodeURIComponent(firstName) + " " + encodeURIComponent(lastName) + "." + encodeURIComponent(topic) + " hakkında bilgi alabilir miyim lütfen..."  ;
+
+  // Yeni pencerede WhatsApp'a yönlendir
+  window.open(url);
+});
+	</script>
 
 
 	<script>
