@@ -52,14 +52,16 @@
 	}
 
 	#template-nt-hero {
-		background: url(../images/contact.jpeg) top left; 
+		background: url(../images/Jemoon-company.jpeg); 
 		background-size: cover;
 		background-attachment:fixed;
+		background-position: center;
+
 	}
 
 	.JeMoon_Logo {
 		font-family: 'Mistrully', sans-serif; 
-		color: rgb(255, 210, 48);
+		color: wheat;
 		margin-top: 23px;
 
 	}
@@ -7512,6 +7514,13 @@
 	  border-radius: 0px;
 	  margin-top: 20px;
 	}
+
+	.sleep .JeMoon_Logo {
+		color: rgb(20, 32, 59);
+	}
+
+
+
 	#template-nt-menu.sleep {
 	  -webkit-transform: translateY(-100%);
 	  -moz-transform: translateY(-100%);

@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form id="myForm">
-        <input type="text" id="name" placeholder="Adınız">
-        <input type="text" id="phoneNumber" placeholder="Telefon Numarası">
-        <input type="text" id="message" placeholder="Mesajınız">
-        <button type="submit">Gönder</button>
-      </form>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  
+    <!-- This site is optimized with the Yoast SEO plugin v20.3 - https://yoast.com/wordpress/plugins/seo/ -->
+ <!-- / Yoast SEO plugin. -->
+  
+  
+  
+     <style>
+      qodef-svg--menu{fill:none;stroke:none}
+      .qodef-svg--menu g path:last-child{fill:currentColor}
+      .qodef-svg--border{fill:none;stroke:none}
+      .qodef-svg--border g path:last-child{stroke:currentColor}
+      .qodef-svg--cart{fill:currentColor;stroke:none}.qodef-svg--search{fill:none;stroke:currentColor}
+      .qodef-svg--star{fill:none;stroke:currentColor}
+      .qodef-svg--menu-arrow{fill:currentColor;stroke:none}
 
-
-
-    <script>
-        document.getElementById("myForm").addEventListener("submit", function(event) {
-          event.preventDefault(); // Sayfanın yeniden yüklenmesini engeller
+      .qodef-svg--menu g:nth-child(3),.qodef-opener-icon.qodef-source--predefined svg.qodef-svg--menu g:nth-child(4){-webkit-clip-path:inset(0 0 0 0);clip-path:inset(0 0 0 0);transition:-webkit-clip-path .45s cubic-bezier(.45,.05,.15,.93);transition:clip-path .45s cubic-bezier(.45,.05,.15,.93);transition:clip-path .45s cubic-bezier(.45,.05,.15,.93),-webkit-clip-path .45s cubic-bezier(.45,.05,.15,.93)}.qodef-opener-icon.qodef-source--predefined svg.qodef-svg--close line{stroke-dasharray:30;stroke-dashoffset:0;transition:stroke-dashoffset .6s ease}.qodef-opener-icon.qodef-source--predefined svg.qodef-svg--close line:nth-child(1){transition-delay:0s}.qodef-opener-icon.qodef-source--predefined svg.qodef-svg--close line:nth-child(2){transition-delay:.2s}.qodef-opener-icon.qodef-source--predefined:hover svg.qodef-svg--menu g:nth-child(3),.qodef-opener-icon.qodef-source--predefined:hover svg.qodef-svg--menu g:nth-child(4){-webkit-clip-path:inset(0 50% 0 50%);clip-path:inset(0 50% 0 50%)}
+     </style>
+      </head>
+      <body>
         
-          // Değerleri al
-          var name = document.getElementById("name").value;
-          var phoneNumber = document.getElementById("phoneNumber").value;
-          var message = document.getElementById("message").value;
-        
-          // WhatsApp'a yönlendir ve mesajı oluştur
-          var url = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodeURIComponent(message);
-        
-          // Yeni pencerede WhatsApp'a yönlendir
-          window.open(url);
-        });
-        </script>
-</body>
+          <div  id="halstein_core_side_area_opener-2" 
+                class="widget widget_halstein_core_side_area_opener qodef-header-widget-area-one" 
+                data-area="header-widget-one">
+                    <a href="javascript:void(0)" 
+                    class="qodef-opener-icon qodef-m qodef-source--predefined qodef-side-area-opener">
+          <svg class="qodef-svg--menu" style="color: red; font-size: 50px;" 
+          
+          width="31" height="31" viewBox="0 0 31 31">
+            <g>
+                <path d="M15 0h1v31h-1Z"></path>
+                  <path d="M15 0h1v31h-1V0Z"></path>
+                  </g><g><path d="M0 15h31v1H0Z"></path>
+                      <path d="M0 15h31v1H0v-1Z"></path></g><g>
+                          <path d="m26.106 4.186.707.707-21.92 21.92-.707-.707Z"></path>
+                            <path d="m26.106 4.186.707.707-21.92 21.92-.707-.708 21.92-21.92Z"></path>
+                            </g><g><path d="m26.813 26.105-.707.707-21.92-21.92.707-.707Z"></path>
+                                <path d="M26.106 26.813 4.186 4.893l.707-.707 21.92 21.92-.707.707Z"></path></g></svg>	</span>
+        </div>
+      </body>
 </html>
