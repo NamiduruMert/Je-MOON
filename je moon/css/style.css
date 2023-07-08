@@ -7590,7 +7590,7 @@
 	  bottom: 0;
 	  width: 290px;
 	  padding: 40px 30px;
-	  background:#AFA060;
+	  background:#14203b;
 	  color: #878c93;
 	}
 	#template-nt-offcanvass .template-nt-lead {
@@ -7614,12 +7614,14 @@
 	  padding: 10px 4px;
 	  border-bottom: 1px solid rgba(86, 58, 9, 0.17);
 	  font-size: 18px;
-	  color: black;
+	  color: white;
 	}
 	#template-nt-offcanvass ul li a:hover, #template-nt-offcanvass ul li a:focus, #template-nt-offcanvass ul li a:active {
 	  outline: none;
 	  text-decoration: none;
-	  background-color:#AFA060;
+	  background-color: rgba(175, 160, 96, 0.2);
+	  border-radius: 5px;
+	  
 	  color:#FFF;
 	  
 	 
@@ -7761,13 +7763,14 @@
 	}
 	#template-nt-hero .template-nt-intro h2 {
 	  color: #fff;
-	  font-size: 50px;
+	  font-size: 38px;
 	  line-height: 50px;
 	  font-weight: 700;
 	}
 	@media screen and (max-width: 768px) {
 	  #template-nt-hero .template-nt-intro h2 {
-		font-size: 40px;
+		margin-top: 50px;
+		font-size: 33px;
 		line-height: 40px;
 	  }
 	}
@@ -7776,6 +7779,15 @@
 	  line-height: 34px;
 	  letter-spacing: .05em;
 	}
+	@media screen and (max-width: 768px) {
+		#template-nt-hero .template-nt-intro p {
+			margin-bottom: 186px;
+		  
+		  
+		}
+	  }
+
+	 
 	#template-nt-hero .template-nt-intro .btn {
 	  background: AD8350;
 	}
@@ -7848,6 +7860,25 @@
 	#template-nt-clients .template-nt-client {
 	  margin-bottom: 0px;
 	}
+	@media screen and (max-width: 992px) {
+		#template-nt-clients  {
+		 padding:20px 0 0 0 ;
+		}
+	  }
+	  @media screen and (max-width: 768px) {
+		#template-nt-clients  {
+			padding:20px 0 0 0 ;
+
+
+		}
+	  }
+	  @media screen and (max-width: 480px) {
+		#template-nt-clients  {
+			padding:20px 0 0 0 ;
+
+
+		}
+	  }
 	@media screen and (max-width: 992px) {
 	  #template-nt-clients .template-nt-client {
 		margin-bottom: 30px;
@@ -8576,8 +8607,8 @@
 	  right: 0;
 	  bottom: 0;
 	  z-index: 8;
-	  background: rgba(0, 0, 0, 0.8);
-	  opacity: .5;
+	  background: #14203b;
+	  
 	}
 	#template-nt-footer .template-nt-footer-content {
 	  position: relative;
@@ -8609,15 +8640,15 @@
 	  font-family: "Montserrat", arial, sans-serif;
 	  text-transform: uppercase;
 	  letter-spacing: 4px;
-	  color: #fff;
+	  color: rgb(255, 210, 48);
 	  margin-bottom: 20px;
 	  text-align: center;
 	}
 	#template-nt-footer a {
-	  color:rgb(255, 210, 48);
+	  color:white;
 	}
 	#template-nt-footer a:hover, #template-nt-footer a:active, #template-nt-footer a:focus {
-	  color: #764134;
+	  color: rgb(255, 210, 48);
 	}
 	#template-nt-footer .template-nt-footer-logo {
 	  display: block;
@@ -9124,6 +9155,6 @@
 	}
 
 	.footer-icons {
-		font-size: 30px;
+		font-size: 20px;
 		margin: 10px;
 	}
