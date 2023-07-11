@@ -3949,19 +3949,20 @@
 	}
 
 	.btn-warning {
-	  color: #fff;
-	  background-color: #f0ad4e;
-	  border-color: #eea236;
+		color: #fff;
+		background-color: #f0ad4e;
+		border-color: #eea236;
 	}
 	.btn-warning:focus, .btn-warning.focus {
 	  color: #fff;
-	  background-color: #ec971f;
+	  background-color: rgb(20,32,59);
 	  border-color: #985f0d;
 	}
 	.btn-warning:hover {
-	  color: #fff;
-	  background-color: #ec971f;
-	  border-color: #d58512;
+		background-color: wheat;
+		border-color: #d58512;
+		color: rgb(20,32,59);
+		font-weight: bold;
 	}
 	.btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle {
 	  color: #fff;
@@ -8010,12 +8011,12 @@
 	}
 	@media screen and (max-width: 1200px) {
 	  #template-nt-features-3 .template-nt-text-wrap {
-		margin-top: 0em;
+		margin-top: 2em;
 	  }
 	}
 	@media screen and (max-width: 992px) {
 	  #template-nt-features-3 .template-nt-text-wrap {
-		margin-top: 0em;
+		margin-top: 2em;
 	  }
 	}
 	#template-nt-features-3 .template-nt-text-wrap .template-nt-text {
@@ -8033,7 +8034,7 @@
 	  margin-bottom: 20px;
 	}
 	#template-nt-features-3 .template-nt-icon i {
-	  color: #764134;
+	  color: rgb(20,32,59);
 	}
 
 	#template-nt-features-2 .template-nt-text-wrap {
@@ -8534,7 +8535,7 @@
 	}
 
 	.btn-warning {
-	  background: #f0ad4e;
+		background: rgb(20,32,59);
 	}
 
 	.btn-primary,
