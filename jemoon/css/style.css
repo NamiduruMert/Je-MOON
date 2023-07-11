@@ -8008,6 +8008,7 @@
 
 	#template-nt-features-3 .template-nt-text-wrap {
 	  margin-bottom: 2em;
+	  height: 250px;
 	}
 	@media screen and (max-width: 1200px) {
 	  #template-nt-features-3 .template-nt-text-wrap {
@@ -8018,6 +8019,7 @@
 	  #template-nt-features-3 .template-nt-text-wrap {
 		margin-top: 2em;
 	  }
+	  
 	}
 	#template-nt-features-3 .template-nt-text-wrap .template-nt-text {
 	  margin-bottom: 20px;
@@ -8027,7 +8029,28 @@
 		padding-left: 15px;
 		padding-right: 15px;
 	  }
+	  #template-nt-features-3 .mrgn-tp {
+		margin-top: 100px;
 	}
+	}
+	@media screen and (max-width: 400px) {
+		#template-nt-features-3 .template-nt-text-wrap .template-nt-text {
+		  padding-left: 15px;
+		  padding-right: 15px;
+		}
+		#template-nt-features-3 .mrgn-tp {
+		  margin-top: 150px;
+	  }
+	  }
+	  @media screen and (max-width: 350px) {
+		#template-nt-features-3 .template-nt-text-wrap .template-nt-text {
+		  padding-left: 15px;
+		  padding-right: 15px;
+		}
+		#template-nt-features-3 .mrgn-tp {
+		  margin-top: 200px;
+	  }
+	  }
 	#template-nt-features-3 .template-nt-icon {
 	  font-size: 40px;
 	  display: block;
