@@ -335,7 +335,15 @@
 
 									<div style="color: brown; font-weight: 800;" class="JeMoon_Logo">Je MOON</div>
 									<h1 style="line-height: 1.5em;">Henüz hazırlık aşamasındadır.</h1>
-									<p class="countdown" id="countdown"></p>
+									<p class="countdown" id="countdown">
+
+										<div class="col-md-4 col-md-offset-4 text-center to-animate-off">
+											<a 
+												href="index.html"
+												class="btn btn-warning">Anasayfa</a>
+										</div>
+
+									</p>
 							
 
 							<div class="clearfix visible-sm-block"></div>
@@ -436,22 +444,7 @@
 	</div>
 
 
-	<script>
-		window.addEventListener('DOMContentLoaded', function() {
-		  var countdownElement = document.getElementById('countdown');
-		  var secondsRemaining = 10;
-		  
-		  var countdownInterval = setInterval(function() {
-			countdownElement.textContent = secondsRemaining + ' saniye sonra anasayfaya yönlendirileceksiniz...';
-			secondsRemaining--;
-			
-			if (secondsRemaining < 0) {
-			  clearInterval(countdownInterval);
-			  window.location.href = 'index.html';
-			}
-		  }, 1000);
-		});
-	  </script>
+	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -469,22 +462,6 @@
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
 
-	<script>
-document.getElementById("sendMessage").addEventListener("click", function(event) {
-  event.preventDefault(); // Sayfanın yeniden yüklenmesini engeller
-
-  // Değerleri al
-  var firstName = document.getElementById("firstName").value;
-  var lastName = document.getElementById("lastName").value;
-  var topic = document.getElementById("topic").value;
-
-  // WhatsApp'a yönlendir ve mesajı oluştur
-  var url = "https://api.whatsapp.com/send?phone=" + 905393349205 + "&text=" + "Merhabalar." + " Ben " + encodeURIComponent(firstName) + " " + encodeURIComponent(lastName) + "." + encodeURIComponent(topic) + " hakkında bilgi alabilir miyim lütfen..."  ;
-
-  // Yeni pencerede WhatsApp'a yönlendir
-  window.open(url);
-});
-	</script>
 
 
 	<script>
