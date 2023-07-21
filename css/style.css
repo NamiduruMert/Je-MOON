@@ -51,13 +51,7 @@
 		
 	}
 
-	#template-nt-hero {
-		background: url(../images/Jemoon-company.jpeg); 
-		background-size: cover;
-		background-attachment:fixed;
-		background-position: center;
 
-	}
 
 	.JeMoon_Logo {
 		font-family: 'Mistrully', sans-serif; 
@@ -7711,7 +7705,8 @@
 	  background: url(../images/Jemoon-company.jpeg); 
 		background-size: cover;
 		background-attachment:fixed;
-		background-position: center;
+		background-position: center center;
+		background-repeat: no-repeat;
 	}
 
 	#template-nt-hero .template-nt-overlay {
