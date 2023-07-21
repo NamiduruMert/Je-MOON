@@ -3962,8 +3962,7 @@
 		background-color: wheat;
 		border-color: #d58512;
 		color: rgb(20,32,59);
-		font-weight: bold;
-	}
+ 	}
 	.btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle {
 	  color: #fff;
 	  background-color: #ec971f;
@@ -7709,6 +7708,10 @@
 	  padding-bottom: 4em;
 	  height: 100vh;
 	  z-index: 10;
+	  background: url(../images/Jemoon-company.jpeg); 
+		background-size: cover;
+		background-attachment:fixed;
+		background-position: center;
 	}
 
 	#template-nt-hero .template-nt-overlay {
