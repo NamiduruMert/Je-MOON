@@ -59,6 +59,7 @@
 		font-family: 'Mistrully', sans-serif; 
 		color: wheat;
 		margin-top: 23px;
+		
 
 	}
 
@@ -9250,5 +9251,15 @@
 	  @media (max-width: 768px) {
 		.textJustify-1 {
 			text-align: left;
+		  }
+	  }
+
+
+	  .ourFooter {
+		top: 500px;
+	  }
+	  @media (max-width: 768px) {
+		.ourFooter {
+			top: 20px;
 		  }
 	  }
