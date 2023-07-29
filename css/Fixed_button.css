@@ -13,10 +13,22 @@
     z-index: 999999999999;
     border-radius: 50%;
     color: wheat;
+
+    
    
   
     
   }
+
+  @media screen and (max-width: 768px) {
+	  #back-to-top {
+    right: 43.8%;
+     
+    }
+	}
+
+
+
   #back-to-top i {margin-top: 5px;}
   
   
