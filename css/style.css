@@ -41,14 +41,17 @@
 
 	#template-nt-counter {
 		background-image: url(../images/Background-4.jpg);
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
 	}
 
-	#template-nt-cta {
+	/* #template-nt-cta {
 		background-image: url(../images/Background-4.jpg); 
 		background-attachment: fixed;
 		background-position: center;
 		
-	}
+	} */
 
 
 
