@@ -7703,7 +7703,7 @@
 	  height: 100vh;
 	  z-index: 10;
 	  background: url(../images/Jemoon-company.jpeg); 
-		background-attachment:fixed;
+		background-size: cover;
 		background-position: center center;
 		background-repeat: no-repeat;
 	}
