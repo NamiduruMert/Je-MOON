@@ -8949,6 +8949,13 @@
 	  width: 44px;
 	  border-bottom: none !important;
 	}
+	@media screen and (max-width: 768px) {
+	  .template-nt-nav-toggle {
+	  
+	  top: 18px;
+	  
+	}
+	}
 	.template-nt-nav-toggle > span {
 	  display: -moz-inline-stack;
 	  display: inline-block;
