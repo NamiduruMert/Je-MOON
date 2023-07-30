@@ -298,8 +298,8 @@
 
 										</div>
 										<div class="col-md-3 text-center">
-											<span class="template-nt-counter js-counter" data-from="1" data-to="100"
-												data-speed="5000" data-refresh-interval="50"></span>
+											<span class="template-nt-counter js-counter--1" data-from="0" data-to="100"
+    data-speed="5000" data-refresh-interval="50"></span>
 											<span class="template-nt-counter-label">Müşteri Memnuniyeti</span>
 										</div>
 										<div class="col-md-3 text-center">
@@ -530,7 +530,7 @@
 							<span class="faq-accordion-icon-toggle"><i class="icon-arrow-down"></i></span>
 							<h3>Neden sizinle iş ortaklığı kurmalıyım?</h3>
 							<div class="faq-body">
-								<p class="indented-paragraph-13"><span style="text-decoration: underline; text-align: justify;">Je Moon ile iş ortaklığı kurduğunuz takdirde;</span> <br>
+								<p style="text-align: justify;" class="indented-paragraph-13"><span style="text-decoration: underline; text-align: justify;">Je Moon ile iş ortaklığı kurduğunuz takdirde;</span> <br>
 									<br><strong>Proje gizliliği:</strong> İş ortaklığının kurulmasıyla projeleriniz, tarafınıza atanan danışmanınız ve sizin dışınızda hiçbir personelimiz ile paylaşılmamaktadır. Projelerinizin enstitünüz tarafından onay almasının ardından 15 günün sonunda şirket yöneticilerimiz tarafından imha edilmekte ve öğrencilerin olası bir güvenlik sorunu ile karşılaşması engellenmektedir.  <br>
 									<strong>Hızlı iletişim:</strong> Tarafınıza atanan danışmanlarınız ile 7/24 iletişime geçmeniz sağlanmaktadır.
 									<br><strong>Uygun fiyat:</strong> Sektörde mevcut olan hiyerarşinin aksine Je Moon’da aracı olmadan direk danışanlarınız ile iletişime geçip fiyat teklifi almaktasınız. Bu durum sonucunda aracı bireylere/kurumlara ek ücret ödemeden minimum fiyat garantisi ile maksimum performans elde etmiş olmaktasınız.
@@ -617,6 +617,49 @@
 
 
 	</div>
+	
+<script>
+    // Span elementini seçin
+    const counterElement = document.querySelector('.js-counter--1');
+
+    // Başlangıç ve bitiş değerlerini alın
+    const from = parseInt(counterElement.dataset.from);
+    const to = parseInt(counterElement.dataset.to);
+
+    // Hedef yüzde değerini hesaplayın
+    const targetPercentage = (to / 100) * 100;
+
+    // Sayacı güncellemek için fonksiyon oluşturun
+    function updateCounter(percentage) {
+        counterElement.textContent = percentage.toFixed(0) + '%';
+    }
+
+    // Sayacı başlatın
+    let currentPercentage = from;
+    updateCounter(currentPercentage);
+
+    // Sayacı artırın
+    const step = 1; // İsterseniz artış miktarını burada değiştirebilirsiniz
+    const interval = parseInt(counterElement.dataset.refreshInterval);
+    const speed = parseInt(counterElement.dataset.speed);
+    const totalSteps = Math.abs(targetPercentage - from);
+
+    const timer = setInterval(() => {
+        if (currentPercentage < targetPercentage) {
+            currentPercentage += step;
+        } else if (currentPercentage > targetPercentage) {
+            currentPercentage -= step;
+        } else {
+            clearInterval(timer);
+        }
+
+        if (currentPercentage > to) {
+            currentPercentage = to;
+        }
+
+        updateCounter(currentPercentage);
+    }, speed / totalSteps);
+</script>
 
 
 
